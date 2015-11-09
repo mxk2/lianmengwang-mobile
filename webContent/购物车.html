@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<link rel="stylesheet" href="../css/jquery.mobile-1.4.5.css" />
+		<link rel="stylesheet" href="../css/main.css" />
+		<link type="text/css" rel="stylesheet" href="../css/320.css" media="screen and (min-width:320px) and (max-width:374px)" />
+		<link type="text/css" rel="stylesheet" href="../css/375.css" media="screen and (min-width:375px) and (max-width:413px)" />
+		<link type="text/css" rel="stylesheet" href="../css/414.css" media="screen and (min-width:414px)" />
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/jquery.mobile-1.4.5.min.js"></script>
+		<script src="../js/main.js"></script>
+	</head>
+
+	<body>
+		<div data-role="page">
+			<!-- header start -->
+			<div id="search-header" data-role="header" data-position="fixed">
+				<div class="header">
+					<h1 class="text-center h1-header">
+						<strong>购物车</strong>
+						<a class="fr ui-btn-right ui-btn-bianji" href="">编辑</a>
+					</h1>
+				</div>
+			</div>
+			<!-- header end -->
+
+			<!-- main start -->
+			<div id="main" role="main" class="ui-content p0">
+				<form action="">
+					<ul class="ui-listview-shoppingCart m0" data-role="listview">
+						<li>
+							<div class="fl ui-block-a">
+								<div class="checkbox">
+									<label class="ui-checkbox-radio">
+										<input type="checkbox" name="checkbox-0" checked="checked" id="" />
+									</label>
+								</div>
+							</div>		
+							<div class="fl ui-block-b">
+								<a href="">
+									<img src="../images/gwc-1.png" alt="" />
+								</a>
+							</div>
+							<div class="fl ui-block-c">
+								<div>
+									<a href="">
+										灰色麻布 纯色彩色粗亚麻棉麻布料 背景窗帘装饰手工DIY面料-象牙白-麻布...
+									</a>
+								</div>
+								<p class="m0 color-f60">￥ 6.90</p>
+								<div class="box-num">
+									<input class="fl left" type="button" value="-" />
+									<input class="fl center" type="text" value="1" />
+									<input class="fl right" type="button" value="+" />
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="fl ui-block-a">
+								<div class="checkbox">
+									<label class="ui-checkbox-radio">
+										<input type="checkbox" name="checkbox-0" id="" />
+									</label>
+								</div>
+							</div>		
+							<div class="fl ui-block-b">
+								<a href="">
+									<img src="../images/gwc-2.png" alt="" />
+								</a>
+							</div>
+							<div class="fl ui-block-c">
+								<div>
+									<a href="">
+										灰色麻布 纯色彩色粗亚麻棉麻布料 背景窗帘装饰手工DIY面料-象牙白-麻布...
+									</a>
+								</div>
+								<p class="m0 color-f60">￥ 6.90</p>
+								<div class="box-num">
+									<input class="fl left" type="button" value="-" />
+									<input class="fl center" type="text" value="1" />
+									<input class="fl right" type="button" value="+" />
+								</div>
+							</div>
+						</li>
+					</ul>
+				</form>
+			</div>
+			<!-- main end -->
+
+			<!-- footer start -->
+			<div id="footer" data-role="footer" data-position="fixed">
+				<div class="ui-block-jiesuan overflow">
+					<div class="ui-block-a bg-000">
+						<div class="checkbox fl ml10">
+							<label class="ui-checkbox-radio">
+								<input type="checkbox" name="checkbox-0" checked="checked" id="" />
+							</label>
+						</div>
+						<div class="fl size-8">全选</div>
+						<div class="fl color-f30">
+							合计：￥15.90
+						</div>
+					</div>
+					<div class="ui-block-b bg-f30 text-center">
+						去结算（2）
+					</div>
+				</div>
+				<div class="ui-grid-c">
+					<div class="ui-block-a">
+						<div class="ui-bar ui-bar-a">
+							<a href="index.html">
+								<img src="../images/icon-11.png" alt="首页" />
+								<p>首页</p>
+							</a>
+						</div>
+					</div>
+					<div class="ui-block-b">
+						<div class="ui-bar ui-bar-a">
+							<div class="ui-bar ui-bar-a">
+								<a href="分类.html">
+									<img src="../images/icon-12.png" alt="分类" />
+									<p>分类</p>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="ui-block-c">
+						<div class="ui-bar ui-bar-a">
+							<div class="ui-bar ui-bar-a">
+								<a class="selected" href="购物车.html">
+									<img src="../images/icon-13.png" alt="购物车" />
+									<p>购物车</p>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="ui-block-d">
+						<div class="ui-bar ui-bar-a">
+							<div class="ui-bar ui-bar-a">
+								<a href="我的.html">
+									<img src="../images/icon-14.png" alt="我的" />
+									<p>我的</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- footer end -->
+
+		</div>
+	</body>
+	<script>
+		$(function() {
+			/*编辑*/
+			$("body").on("click", ".ui-btn-bianji", function(){
+				$(".ui-listview-shoppingCart input[type='checkbox']").each(function(){
+					$(this).removeAttr("checked").prev(".ui-checkbox-on").removeClass("ui-checkbox-on").addClass("ui-checkbox-off");
+				});
+			});
+		});
+	</script>
+</html>

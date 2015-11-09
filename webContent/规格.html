@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>商品</title>
+		<link rel="stylesheet" href="../css/jquery.mobile-1.4.5.css" />
+		<link rel="stylesheet" href="../css/main.css" />
+		<link type="text/css" rel="stylesheet" href="../css/320.css" media="screen and (min-width:320px) and (max-width:374px)" />
+		<link type="text/css" rel="stylesheet" href="../css/375.css" media="screen and (min-width:375px) and (max-width:413px)" />
+		<link type="text/css" rel="stylesheet" href="../css/414.css" media="screen and (min-width:414px)" />
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/jquery.mobile-1.4.5.min.js"></script>
+		<script src="../js/main.js"></script>
+		<script>
+			$(document).ready(function(){
+				//规格
+				$("body").on("click", ".box-guige .content a", function(){
+					$(this).addClass("selected").siblings(".selected").removeClass("selected");
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<div data-role="page">
+			<div class="panel-shaixuan" data-role="panel" id="right-panel" data-display="overlay" data-position="right">
+				<h1 class="text-center">
+					<a class="cancel" data-rel="close">取消</a>
+					<a class="confirm" data-rel="close">确定</a>
+					筛选
+				</h1>
+				<div class="overflow box-guige-img">
+					<div class="fl w-50">
+						<a href="#">
+							<img class="w" src="../images/guige-1.fw.png" alt="" />
+						</a>
+					</div>
+					<div class="fr w-50">
+						<p class="color-f30 size-16 ml10 mt10">￥88.00</p>
+						<p class="color-333 ml10 mt10">库存300</p>
+					</div>
+				</div>
+				<div class="box-guige overflow">
+					<div class="fl name">
+						<a href="">规格</a>
+					</div>
+					<div class="fl content guige">
+						<a class="selected">规格1</a>
+						<a>规格2</a>
+						<a>规格3</a>
+						<a>定制加工</a>
+					</div>
+				</div>
+				<div class="box-guige overflow">
+					<div class="fl name">
+						<a href="">数量</a>
+					</div>
+					<div class="fl content">
+						<div class="box-num mt5em">
+							<input class="fl left" type="button" value="-" />
+							<input class="fl center" type="text" value="1" />
+							<input class="fl right" type="button" value="+" />
+						</div>
+					</div>
+				</div>
+			</div><!-- /panel -->
+			<!-- header start -->
+			<div id="search-header" class="header-dingdan p0"  data-role="header" data-position="fixed">
+				<div class="header">
+					<a class="return ui-btn-left top33" href="#">
+						<img src="../images/icon-goBack.png" alt="" />
+					</a>
+					<a class="ui-btn-fun ui-btn-right top37" href="#right-panel">
+						<img src="../images/icon-dian.fw.png" alt="" />
+					</a>
+					<ul class="list-inine list-pingjia">
+						<li class="active">
+							<a href="商品.html">商品</a>
+						</li>
+						<li>
+							<a href="详情.html">详情</a>
+						</li>
+						<li>
+							<a href="评价.html">评价</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- header end -->
+
+			<!-- main start -->
+			<div id="main" role="main" class="ui-content">
+				<div class="banner">
+					<ul>
+						<li>
+							<a href="#">
+								<img src="../images/banner-1.fw.png" alt="" />
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="../images/banner-2.fw.png" alt="" />
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="../images/banner-3.fw.png" alt="" />
+							</a>
+						</li>
+					</ul>
+					<div class="num"></div>
+				</div>
+				<div class="overflow box-shangpin-name">
+					<div class="fl w-80">
+						<a class="name size-12" href="#">灰色麻布 纯色彩色粗亚麻棉麻布料 背景窗帘装饰手工DIY面料-象牙白-麻布-粗面</a>
+						<a class="detail size-8 color-f30 mt1em" href="#">货到付款 3c认证 买的放心 用的舒心 中秋节送礼 足米价，两件包邮~~！活性印染~适合手工，束口袋，桌布，桌旗，窗帘，靠垫，手工，背景布，装修等。</a>
+					</div>
+					<div class="fr">
+						<a href="">
+							<img src="../images/icon-goDetail.png"/>
+						</a>
+					</div>
+				</div>
+				<div class="box-prive overflow p1-0 bor-bottom-1-d">
+					<a class="fl color-f30 size-16" href="">￥88.00</a>
+					<a class="fr box-chengjiaoliang" href="">成交量<span>250</span>件</a>
+				</div>
+				<div class="bor-bottom-1-d">
+					<div class="p5-0">
+						<span class="color-999">运费</span>
+						<a class="color-333 ml2em" href="">免运费</a>
+					</div>
+					<div class="p5-0">
+						<span class="color-999">送至</span>
+						<a class="color-333 ml2em" href="">上海</a>
+					</div>
+					<div class="p5-0">
+						<span class="color-999">提示</span>
+						<a class="color-f30 ml2em" href="">打白条全场12期免息  移动专享</a>
+					</div>
+				</div>
+				<div class="bor-bottom-1-d">
+					<div class="p5-0 overflow">
+						<span class="color-999 fl">选择规格</span>
+						<a class="color-333 ml2em fl" href="">黑色粗亚麻</a>
+						<a href="" class="fr">
+							<img src="../images/icon-goDetail.png" alt="" />
+						</a>
+					</div>
+				</div>
+				<div class="bor-bottom-1-d">
+					<div class="p5-0 overflow">
+						<span class="color-999 fl">商品评价</span>
+						<a class="color-f30 ml2em fl size-8" href="">620人评价</a>
+						<a href="" class="fr">
+							<img src="../images/icon-goDetail.png" alt="" />
+						</a>
+					</div>
+				</div>
+				<div class="overflow box-pingjia-info">
+					<div class="fl left">
+						<img src="../images/icon-admin.fw.png"/>
+						<p>向太阳**</p>
+					</div>
+					<div class="right fl">
+						<div class="star overflow">
+							<div class="box-star fl">
+								<img src="../images/icon-star.fw.png" alt="" />
+								<img src="../images/icon-star.fw.png" alt="" />
+								<img src="../images/icon-star.fw.png" alt="" />
+								<img src="../images/icon-star.fw.png" alt="" />
+								<img src="../images/icon-star.fw.png" alt="" />
+							</div>
+							<div class="fl time-pingjia">
+								2014-10-20 19:52:25
+							</div>
+						</div>
+						<div class="content">
+							第三次来了，老客户了，质量很不错，值得信赖！
+						</div>
+					</div>
+				</div>
+				<div class="overflow box-pingjia-info">
+					<div class="fl left">
+						<img src="../images/icon-admin.fw.png"/>
+						<p>向太阳**</p>
+					</div>
+					<div class="right fl">
+						<div class="star overflow">
+							<div class="box-star fl">
+								<img src="../images/icon-star.fw.png" alt="" />
+								<img src="../images/icon-star.fw.png" alt="" />
+								<img src="../images/icon-star.fw.png" alt="" />
+								<img src="../images/icon-star.fw.png" alt="" />
+								<img src="../images/icon-star.fw.png" alt="" />
+							</div>
+							<div class="fl time-pingjia">
+								2014-10-20 19:52:25
+							</div>
+						</div>
+						<div class="content">
+							第三次来了，老客户了，质量很不错，值得信赖！
+						</div>
+					</div>
+				</div>
+				<div class="p1-0 text-center bor-bottom-1-d">
+					<a class="size-12 color-333" href="#">查看更多评价</a>
+				</div>
+				<div class="p1-0 text-center">
+					<img src="../images/icon-up-2.fw.png" alt="" />
+					上拉查看图文详情
+				</div>
+				<div data-role="tabs" id="tabs">
+					<div data-role="navbar" id="xiangqing" name="xiangqing">
+						<ul class="list-twxq">
+							<li><a href="#one" data-ajax="false">图文详情</a></li>
+							<li><a href="#two" data-ajax="false">产品参数</a></li>
+						</ul>
+					</div>
+					<div id="one" class="ui-body-d ui-content p0">
+						<img src="../images/twxq-1.fw.png" alt="" />
+						<img src="../images/twxq-2.fw.png" alt="" />
+						<img src="../images/twxq-3.fw.png" alt="" />
+						<div class="loading">
+							<img src="../images/icon-loading.png" alt="" />
+							<span>加载中...</span>
+						</div>
+					</div>
+					<div id="two" class="p0">
+						<h1>产品参数</h1>
+					</div>
+				</div>
+			</div>
+			<!-- main end -->
+			
+			<!-- footer start -->
+			<div id="footer" data-role="footer" data-position="fixed">
+				<div class="ui-block-guanzhu overflow">
+					<div class="ui-block-a">
+						<a href="#">
+							<img src="../images/icon-guanzhu.fw.png" alt="" />
+							<p>关注</p>
+						</a>
+					</div>
+					<div class="ui-block-b">
+						<a href="购物车.html">
+							<img src="../images/icon-13.png" alt="" />
+							<p>购物车</p>
+						</a>
+					</div>
+					<div class="ui-block-c">
+						<a href="#" class="size-14 active car">加入购物车</a>
+					</div>
+				</div>
+			</div>
+			<!-- footer end -->
+			
+			<div id="goTop"></div>
+		</div>
+	</body>
+
+</html>

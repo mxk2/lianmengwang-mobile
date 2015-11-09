@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>商品</title>
+		<link rel="stylesheet" href="../css/jquery.mobile-1.4.5.css" />
+		<link rel="stylesheet" href="../css/main.css" />
+		<link type="text/css" rel="stylesheet" href="../css/320.css" media="screen and (min-width:320px) and (max-width:374px)" />
+		<link type="text/css" rel="stylesheet" href="../css/375.css" media="screen and (min-width:375px) and (max-width:413px)" />
+		<link type="text/css" rel="stylesheet" href="../css/414.css" media="screen and (min-width:414px)" />
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/jquery.mobile-1.4.5.min.js"></script>
+		<script src="../js/main.js"></script>
+	</head>
+
+	<body>
+		<div data-role="page">
+			<!-- header start -->
+			<div id="search-header" class="header-dingdan p0"  data-role="header" data-position="fixed">
+				<div class="header">
+					<a class="return ui-btn-left top33" href="#">
+						<img src="../images/icon-goBack.png" alt="" />
+					</a>
+					<a class="ui-btn-fun ui-btn-right top37" href="#">
+						<img src="../images/icon-dian.fw.png" alt="" />
+					</a>
+					<ul class="list-inine list-pingjia">
+						<li>
+							<a href="商品.html">商品</a>
+						</li>
+						<li class="active">
+							<a href="#xiangqing">详情</a>
+						</li>
+						<li>
+							<a href="评价.html">评价</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- header end -->
+
+			<!-- main start -->
+			<div id="main" role="main" class="ui-content">
+				<div data-role="tabs" id="tabs">
+					<div data-role="navbar" id="xiangqing" name="xiangqing">
+						<ul class="list-twxq">
+							<li><a href="#one" data-ajax="false">图文详情</a></li>
+							<li><a href="#two" data-ajax="false">产品参数</a></li>
+						</ul>
+					</div>
+					<div id="one" class="ui-body-d ui-content p0">
+						<img src="../images/twxq-1.fw.png" alt="" />
+						<img src="../images/twxq-2.fw.png" alt="" />
+						<img src="../images/twxq-3.fw.png" alt="" />
+						<div class="loading">
+							<img src="../images/icon-loading.png" alt="" />
+							<span>加载中...</span>
+						</div>
+					</div>
+					<div id="two">
+						<h1>产品参数</h1>
+					</div>
+				</div>
+			</div>
+			<!-- main end -->
+			
+			<!-- footer start -->
+			<div id="footer" data-role="footer" data-position="fixed">
+				<div class="ui-block-guanzhu overflow">
+					<div class="ui-block-a">
+						<a href="#">
+							<img src="../images/icon-guanzhu.fw.png" alt="" />
+							<p>关注</p>
+						</a>
+					</div>
+					<div class="ui-block-b">
+						<a href="购物车.html">
+							<img src="../images/icon-13.png" alt="" />
+							<p>购物车</p>
+						</a>
+					</div>
+					<div class="ui-block-c">
+						<a href="#" class="size-14 active car">加入购物车</a>
+					</div>
+				</div>
+			</div>
+			<!-- footer end -->
+			
+			<div id="goTop"></div>
+		</div>
+	</body>
+
+</html>

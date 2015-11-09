@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>支付</title>
+		<link rel="stylesheet" href="../css/jquery.mobile-1.4.5.css" />
+		<link rel="stylesheet" href="../css/main.css" />
+		<link type="text/css" rel="stylesheet" href="../css/320.css" media="screen and (min-width:320px) and (max-width:374px)" />
+		<link type="text/css" rel="stylesheet" href="../css/375.css" media="screen and (min-width:375px) and (max-width:413px)" />
+		<link type="text/css" rel="stylesheet" href="../css/414.css" media="screen and (min-width:414px)" />
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/jquery.mobile-1.4.5.min.js"></script>
+		<script src="../js/main.js"></script>
+		<style>
+			/*支付*/
+			.search-header-1 .h1{ font-size: 1.6em;}
+			.search-header-1 .ui-btn-right{ color:#333; font-weight: normal; text-decoration: none; font-size: 1em;}
+			.box-syt{ padding: 1.5em 1em; border-bottom: 1px solid #ddd;}
+			.box-syt p{ margin:0; line-height: 1.2em;}
+			.box-syt p.detail{ color:#999; font-size: 0.8em;}
+			.box-syt div.ml10{ padding: 0.8em 0;}
+		</style>
+	</head>
+
+	<body>
+		<div data-role="page">
+			<!-- header start -->
+			<div id="search-header" class="p0 search-header-1"  data-role="header" data-position="fixed">
+				<div class="header">
+					<a class="return ui-btn-left" href="#">
+						<img src="../images/icon-goBack.png" alt="" />
+					</a>
+					<a class="ui-btn-fun ui-btn-right top10" href="#">
+						查看订单
+					</a>
+					<h1 class="h1">帘盟商城收银台</h1>
+				</div>
+			</div>
+			<!-- header end -->
+
+			<!-- main start -->
+			<div id="main" role="main" class="ui-content p0">
+				<div class="overflow box-syt">
+					<div class="fl">
+						请选择支付方式
+					</div>
+					<div class="fr color-f30">
+						15.90元
+					</div>
+				</div>
+				<div class="overflow box-syt">
+					<div class="fl overflow">
+						<img class="fl" src="../images/icon-zhifubao.fw.png" alt="" />
+						<div class="fl ml10">
+							<p class="name">支付宝</p>
+							<p class="detail">支付宝快捷支付</p>
+						</div>
+					</div>
+					<div class="fr mt1em">
+						<a href="#">
+							<img src="../images/icon-goDetail.png" alt="" />
+						</a>
+					</div>
+				</div>
+				<div class="overflow box-syt">
+					<div class="fl overflow">
+						<img class="fl" src="../images/icon-weixin.fw.png" alt="" />
+						<div class="fl ml10">
+							<p class="name">微信支付</p>
+							<p class="detail">微信安全支付</p>
+						</div>
+					</div>
+					<div class="fr mt1em">
+						<a href="#">
+							<img src="../images/icon-goDetail.png" alt="" />
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- main end -->
+			
+			
+			<div id="goTop"></div>
+		</div>
+	</body>
+
+</html>
